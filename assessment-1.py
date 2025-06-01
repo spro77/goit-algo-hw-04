@@ -48,7 +48,7 @@ def test_sorting_algorithms():
         if size <= 1000:
             t_insert = timeit.timeit(lambda: insertion_sort(arr), number=1)
         else:
-            t_insert = float('>>>>')
+            t_insert = float('nan')
 
         # Timsort
         t_tim = timeit.timeit(lambda: sorted(arr), number=1)
